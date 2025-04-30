@@ -1,0 +1,252 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 versions,> 1%,not dead
+*/
+
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url("fonts/HankenGrotesk-VariableFont_wght.ttf"), format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Hanken Grotesk", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: hsl(221, 100%, 96%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-results {
+    max-width: 400px;
+    background-color: #FFF;
+}
+
+header {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 60px 40px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    text-align: center;
+}
+
+header h1 {
+    color: hsl(241, 100%, 89%);
+    font-size: 1.2em;
+}
+
+.result-circle {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: 20px;
+    padding: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.result-circle strong {
+    font-size: 3em;
+}
+
+.result-circle p {
+    color: hsl(241, 100%, 89%);
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+header .strong-text {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+header p {
+    color: hsl(241, 100%, 89%)
+}
+
+article {
+    max-width: 100%;
+    padding: 20px 20px 50px;
+}
+section {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.section-reaction {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.section-reaction h3 {
+    color: hsl(0, 100%, 67%)
+}
+
+.section-memory {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.section-memory h3 {
+    color: hsl(39, 100%, 56%)
+}
+
+.section-verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.section-verbal h3 {
+    color: hsl(166, 100%, 37%)
+}
+
+.section-visual {
+    background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.section-visual h3 {
+    color: hsl(234, 85%, 45%)
+}
+
+.flex-in-section {
+    display: flex;
+    gap: 10px
+}
+
+section p {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+}
+
+section p .result {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 800;
+}
+
+button {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    border: none;
+    padding: 18px 125px;
+    width: 97%;
+    border-radius: 50px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    transition: background-color 0.3s ease
+}
+
+button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1em;
+}
+
+footer a:hover {
+    color: hsla(256, 72%, 46%, 1)
+}
+
+@media only screen and (min-width: 402px) {
+    .card-results {
+        border-radius: 28px;
+        box-shadow: 
+            1px 1px 30px rgba(0, 0, 0, 0.1),
+            -1px -1px 30px rgba(0, 0, 0, 0.1),
+            1px -1px 30px rgba(0, 0, 0, 0.1),
+            -1px 1px 30px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+    .card-results:hover {
+        box-shadow: 
+            1px 1px 30px rgba(0, 0, 0, 0.1),
+            -1px -1px 30px rgba(0, 0, 0, 0.1)
+    }
+    header {
+        border-radius: 28px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    article {
+        padding-bottom: 30px;
+    }
+    /*footer {
+        position: absolute;
+        top: unset;
+        bottom: 5px
+    }*/
+}
+
+@media only screen and (min-width: 1024px) {
+    .card-results {
+        max-width: 800px;
+        aspect-ratio: 4 / 3;
+        display: flex;
+    }
+    header {
+        max-width: 48%;
+        padding: 40px 60px 60px;
+        justify-content: space-between;
+    }
+    header h1 {
+        font-size: 1.6em;
+    }
+    .result-circle {
+        width: 220px;
+        height: 220px;
+        padding: 45px;
+        margin: 40px 20px 40px
+    }
+    .result-circle strong {
+        font-size: 5em;
+    }
+    .result-circle p, header p {
+        font-size: 1.2em;
+    }
+    header .strong-text {
+        font-size: 1.8em;
+    }
+    article {
+        padding: 50px 60px 60px
+    }
+    article h2 {
+        font-size: 1.8em;
+        margin-bottom: 35px;
+    }
+    button {
+        margin-top: 50px
+    }
+    footer {
+        bottom: 60px;
+    }
+    footer p {
+        font-size: 1em;
+    }
+}
