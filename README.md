@@ -1,4 +1,4 @@
-# **blog-preview-card**
+# **Results Summary Component**
 
 Ce projet est un exercice réalisé dans le cadre des défis de [Frontend Mentor](https://www.frontendmentor.io/). 
 Il consiste à créer un résumé de résultats en suivant la maquette donnée.
